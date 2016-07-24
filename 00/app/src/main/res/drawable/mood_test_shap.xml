@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+   <corners android:radius="8dp"></corners>
+    <solid android:color="@color/colorWhite"></solid>
+   <!-- <stroke android:color="@color/colorNearlyMenu" android:width="1px"/>-->
+    <gradient android:startColor="@color/line_gray_e5"
+        android:centerColor="@color/colorCityBg" android:endColor="@color/line_gray_e5"></gradient>
+</shape>

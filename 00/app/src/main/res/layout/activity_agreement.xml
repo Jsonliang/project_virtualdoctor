@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liang.virtualdoctor.ui.activitys.AgreementActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/argeement_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/agreement_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/arrow_left_black"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlank"
+            android:text="半个医生"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/argeement_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f0f0f0"
+        android:gravity="center">
+        <WebView
+            android:id="@+id/agreement_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+    </LinearLayout>
+</RelativeLayout>

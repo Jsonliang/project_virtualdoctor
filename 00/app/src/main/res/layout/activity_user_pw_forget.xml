@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/line_gray_light"
+    android:orientation="vertical" >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/forgetpw_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/toolbar_goback"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/arrow_left_black"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/colorBlank"
+            android:text="找回密码"/>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine"/>
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/line_gray_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:background="#fffffffb"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/line_gray_e5" />
+
+
+        <com.liang.virtualdoctor.ui.customviews.ClearEditText
+            android:id="@+id/et_Mobile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@null"
+            android:hint="请输入电话号码"
+            android:inputType="number"
+            android:maxLength="11"
+            android:minHeight="50dp"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:background="@color/line_gray_e5" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <com.liang.virtualdoctor.ui.customviews.ClearEditText
+                android:id="@+id/et_verifiCode"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_weight="1.0"
+                android:background="@null"
+                android:enabled="false"
+                android:hint="输入验证码"
+                android:minHeight="50.0dip"
+                android:singleLine="true"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btnSMSCode"
+                android:layout_width="wrap_content"
+                android:layout_height="30.0dip"
+                android:layout_marginRight="10.0dip"
+                android:background="@drawable/selector_btn_green"
+                android:enabled="false"
+                android:text="获取"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_marginLeft="20.0dip"
+            android:background="@color/line_gray_e5" />
+
+        <com.liang.virtualdoctor.ui.customviews.ClearEditText
+            android:id="@+id/et_Password"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20.0dip"
+            android:layout_marginRight="20.0dip"
+            android:background="@null"
+            android:digits="@string/register_digits"
+            android:hint="输入新密码"
+            android:inputType="textPassword"
+            android:minHeight="50.0dip"
+            android:singleLine="true"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/line_gray_e5" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnEnsure"
+        style="@style/btn_green_main"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="40.0dip"
+        android:enabled="false"
+        android:text="重新设置密码" />
+</LinearLayout>
+</LinearLayout>

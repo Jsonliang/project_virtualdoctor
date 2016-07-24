@@ -1,0 +1,78 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="RadioGroupMenuTheme">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#cacaca</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+
+    <style name="medical_headview_simpledraweeview">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+    </style>
+
+    <style name="screen_margin_style">
+        <item name="android:layout_marginRight">@dimen/pad3</item>
+        <item name="android:layout_marginTop">@dimen/pad3</item>
+        <item name="android:layout_marginLeft">@dimen/pad3</item>
+    </style>
+
+    <style name="normal_textstyle">
+        <item name="android:textColor">@color/textcolor</item>
+        <item name="android:textSize">@dimen/f21</item>
+    </style>
+
+    <style name="btn_green_main">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/selector_btn_green</item>
+    </style>
+    <style name="common_btn">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@drawable/selector_friend_btn</item>
+    </style>
+
+    <!--JACK-->
+    <style name="weather_imagesize">
+            <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+    <style name="CityDialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item><!--影音效果-->
+    
+
+  
+    </style>
+
+    <style name="LoginActivityTheme" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@color/colorLogin</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+</resources>

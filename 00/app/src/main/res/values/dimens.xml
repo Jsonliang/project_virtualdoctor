@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <dimen name="bannerview_pagerView_margin">15dp</dimen>
+    <dimen name="bannerview_item_margin">20dp</dimen>
+    <dimen name="spa3">3dp</dimen>
+    <dimen name="spa72">49dp</dimen>
+    <dimen name="spa74">50dp</dimen>
+    <dimen name="f21">20sp</dimen>
+
+    <dimen name="pad3">6dp</dimen>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="blacktextcolor">#000</color>
+    <color name="colorLine">#afadad</color>
+    <color name="colorChecked">#1ff410</color>
+
+       <color name="linecolor">#cccccc</color>    
+       <color name="green">#7cbe28</color>   
+    <color name="white2">#fafafa</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlank">#000000</color>
+    <color name="colorWeatherDate">#33f9f5f5</color>
+
+    <color name="green_start">#61A30C</color>
+    <color name="green_center">#80C22C</color>
+    <color name="green_end">#95D741</color>
+    <color name="colorTransparent">@android:color/transparent</color>
+    <color name="textcolor">#666666</color>
+    <color name="colorRed">#ff00</color>
+    <color name="line_gray_light">#ffebeaea</color>
+    <color name="line_gray_e5">#ffe5e5e5</color>
+    <color name="colorNearlyMenu">#04af20</color>
+    <color name="green_pressed">#ff5ab142</color>
+    <color name="green_light">#ff67c54e</color>
+    <color name="colorCityBg">#77545454</color>
+    <color name="colorUnPress">#faf7f7</color>
+
+    <color name="colorSymptom">#FFA800</color>
+    <color name="colorLogin">#77000000</color>
+    <color name="colorSearcheBg">#2AD0BD</color>
+</resources>

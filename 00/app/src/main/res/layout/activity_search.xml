@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    tools:context="com.liang.virtualdoctor.ui.activitys.SearchActivity">
+    <include layout="@layout/toolbar_layout" android:id="@+id/search_toolbar"/>
+    <EditText
+        android:id="@+id/search_edit_content"
+        android:layout_below="@id/search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/ic_search_green"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/colorLine"
+        android:hint="输入症状/疾病, 如：发热"
+        android:textColor="@color/colorBlank"
+        android:drawablePadding="10dp"
+        android:lines="1"
+        android:maxEms="60"
+        android:background="@drawable/bg_disease_search_edit">
+        <requestFocus/>
+    </EditText>
+    <Button
+        android:id="@+id/search_btn_search"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_disease_search_btn"
+        android:textColor="@color/colorWhite"
+        android:text="搜索"
+        android:layout_alignTop="@id/search_edit_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:gravity="center"/>
+    <ImageButton
+        android:id="@+id/search_content_clear"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@id/search_btn_search"
+        android:layout_alignTop="@id/search_btn_search"
+        android:background="@null"
+        android:visibility="visible"
+        android:src="@drawable/ic_close_gray"/>
+    <View
+        android:layout_below="@id/search_edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="#efeded"/>
+</RelativeLayout>

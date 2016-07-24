@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">VirtualDoctor</string>
+
+    <!--身体检查Activity toolBar的Title -->
+    <string name="body_toolbar_title">选择查询部位</string>
+    <!--ToolBar 标题 -->
+    <string name="toolbar_goBack_title">返回</string>
+    <string name="register_digits">_0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ</string>
+    <string name="tip_account_empty">请输入您的手机号或邮箱地址</string>
+    <string name="tip_account_regex_not_right">手机号格式不正确</string>
+    <string name="tip_password_can_not_be_empty">密码不能为空</string>
+    <string name="no_install_wechat">未安装微信</string>
+    <string name="no_install_qq">未安装QQ</string>
+    <string name="oauth_fail">授权失败</string>
+    <string name="oauth_cancle">授权取消</string>
+    <string name="tip_loging">登录中...</string>
+    <string name="tip_begin_oauth">开始授权...</string>
+    <string name="tip_login_fail">登录失败</string>
+    <string name="tip_phone_regex_not_right">手机号码格式不正确</string>
+    <string name="tip_please_input_phone">请输入手机号码</string>
+    <string name="count_down">%ss</string>
+    <string name="tip_phone_can_not_be_empty">手机号码不能为空</string>
+    <string name="tip_please_input_code">请输入验证码</string>
+    <string name="tip_please_input_6_25_password">请输入6-25个密码</string>
+</resources>

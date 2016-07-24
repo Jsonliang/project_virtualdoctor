@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCFCFC"
+    tools:context="com.liang.virtualdoctor.ui.activitys.HomeActivity">
+    <FrameLayout
+        android:id="@+id/doctor_fragment_layout"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/colorLine"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+        <RadioButton
+            android:id="@+id/home_menu_selfcheck"
+            android:drawableTop="@drawable/tab_selfcheck_selector"
+            android:text="自查"
+            android:checked="true"
+           style="@style/RadioGroupMenuTheme" />
+        <RadioButton
+            android:id="@+id/home_menu_medicalnews"
+            android:drawableTop="@drawable/tab_medicalnews_selector"
+            android:text="医讯"
+            style="@style/RadioGroupMenuTheme" />
+        <RadioButton
+            android:id="@+id/home_menu_nearly"
+            android:drawableTop="@drawable/tab_nearly_selector"
+            android:text="附近"
+            style="@style/RadioGroupMenuTheme" />
+        <RadioButton
+            android:id="@+id/home_menu_my"
+            android:drawableTop="@drawable/tab_my_selector"
+            android:text="我"
+            style="@style/RadioGroupMenuTheme"  />
+    </RadioGroup>
+</LinearLayout>

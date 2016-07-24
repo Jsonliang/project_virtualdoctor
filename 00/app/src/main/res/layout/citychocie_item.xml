@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/city_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#a1a1a1"
+        android:text="A"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"/>
+    <TextView
+        android:id="@+id/city_cityname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="广州"/>
+</LinearLayout>

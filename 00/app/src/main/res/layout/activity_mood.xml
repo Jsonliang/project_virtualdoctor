@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.liang.virtualdoctor.ui.activitys.MoodActivity">
+    <include layout="@layout/toolbar_layout"/>
+        <LinearLayout
+            android:paddingRight="16dp"
+            android:paddingLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/isr_recognize"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="语音分析"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/isr_recognize_stop"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="停止分析"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/isr_facedetect"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="测试心率"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/isr_expressdetect"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="测试表情"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+            <TextView
+                android:id="@+id/voiceshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:text="TextView"
+
+                android:textSize="25sp" />
+            <TextView
+                android:id="@+id/faceshow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textSize="25sp" />
+</LinearLayout>

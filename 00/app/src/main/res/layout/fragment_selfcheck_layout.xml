@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_marginTop="10dp"
+    android:background="#FCFCFC">
+    <ImageView
+        android:id="@+id/weather_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bg_home_weather" />
+    <!--天气ICON-->
+    <ImageView
+        android:id="@+id/selfcheck_weather_icon"
+        android:layout_alignRight="@id/weather_bg"
+       android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/twelve"/>
+    <TextView
+        android:id="@+id/home_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="半 个 医 生"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/home_top_bg_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_top_title"
+        android:layout_centerHorizontal="true"
+        android:alpha="0.5"
+        android:src="@drawable/home_top_bg_img" />
+
+    <TextView
+        android:id="@+id/weather_temperature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/weather_bg"
+        android:layout_marginLeft="5dp"
+        android:text="27℃/37℃"
+        android:textColor="#000000"
+        android:textSize="10dp" />
+
+    <TextView
+        android:id="@+id/weather_tv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather_temperature"
+        android:layout_marginLeft="10dp"
+        android:text="广州"
+        android:textColor="#000000"
+        android:textSize="15dp" />
+
+    <ImageButton
+        android:id="@+id/selfcheck_body_check_symptom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/home_top_bg_img"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="50dp"
+        android:background="@null"
+        android:src="@drawable/btn_body_check_symptom" />
+
+    <ImageButton
+        android:id="@+id/selfcheck_examine_common"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/home_top_bg_img"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:background="@null"
+        android:src="@drawable/btn_examine_common" />
+
+    <TextView
+        android:id="@+id/selfcheck_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/weather_tv_place"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/bg_home_search_big"
+        android:drawablePadding="20dp"
+        android:drawableRight="@drawable/bg_tab_search"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="输入症状/疾病, 如：发热"
+        android:textColor="#30D25A"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/home_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selfcheck_examine_common"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/ic_hot_green"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="热查症状" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_toLeftOf="@id/home_view"
+        android:layout_alignTop="@id/home_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#d1cfcf"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_toRightOf="@id/home_view"
+        android:layout_alignTop="@id/home_view"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="#d1cfcf"/>
+         <com.liang.virtualdoctor.ui.customviews.Check_Symptom_Scroll
+             android:id="@+id/selfcheck_examine_infos"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="5dp"
+             android:layout_below="@id/home_view"
+             android:orientation="vertical">
+             <LinearLayout
+                 android:id="@+id/selfcheck_ll"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"/>
+             <ImageView
+                 android:id="@+id/home_line"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/line_hot_symptom"
+                 android:adjustViewBounds="true"
+                 android:layout_marginTop="0dp"/>
+         </com.liang.virtualdoctor.ui.customviews.Check_Symptom_Scroll>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/selfcheck_RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/selfcheck_examine_infos"/>
+
+</RelativeLayout>

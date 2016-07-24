@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.liang.virtualdoctor.ui.activitys.FeekbackActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/feekback_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1fc54a">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_left_black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户反馈"
+            android:layout_marginLeft="110dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="@color/colorWhite"/>
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_below="@+id/feekback_toolbar"
+        android:id="@+id/ll_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1f5f6">
+
+      <TextView
+          android:id="@+id/feekback_tv"
+          android:layout_width="wrap_content"
+          android:background="#4860e6"
+          android:layout_marginTop="5dp"
+          android:textSize="23sp"
+          android:padding="5dp"
+          android:visibility="gone"
+          android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorWhite"
+        android:padding="5dp"
+        android:layout_height="wrap_content">
+        <com.liang.virtualdoctor.ui.customviews.ClearEditText
+            android:id="@+id/feekback_et"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="我想说"
+            android:background="@null"
+            android:layout_height="45dp" />
+        <TextView
+            android:id="@+id/feekback_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:textColor="#3ba5d6"
+            android:text="发送"/>
+    </LinearLayout>
+</RelativeLayout>

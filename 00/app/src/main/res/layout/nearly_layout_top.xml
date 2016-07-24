@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/nearly_menu_hos"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/nearly_hos_menu_checked_selector"
+                android:gravity="center"
+                android:button="@null"
+                android:text="医院"
+                android:checked="true"
+                android:enabled="false"
+                android:textColor="#ffffff"/>
+            <RadioButton
+                android:id="@+id/nearly_menu_outp"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/nearly_drug_menu_checked_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="门诊"
+                android:textColor="#04af20"   />
+
+            <RadioButton
+                android:id="@+id/nearly_menu_drugstore"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:background="@drawable/nearly_outp_menu_checked_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="药店"
+                android:textColor="#04af20" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/nearly_place"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp"
+            android:drawableRight="@drawable/arrow_down_green"
+            android:gravity="center"
+            android:text="广州"
+            android:layout_alignParentRight="true"
+            android:textColor="#04af20" />
+</RelativeLayout>

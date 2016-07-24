@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activitys.CityChoiceActivity">
+
+    <include layout="@layout/toolbar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/gps"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#a1a1a1"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp"
+            android:text="GPS定位城市" />
+
+        <TextView
+            android:id="@+id/gps_city"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/gps"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="广州" />
+
+        <ListView
+            android:id="@+id/gps_cityName_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/gps_city" />
+
+        <FrameLayout
+            android:layout_width="45dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#f7f4f4"
+            android:paddingTop="30dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="5dp">
+            <com.liang.virtualdoctor.ui.customviews.CityChoiceLayout
+                android:id="@+id/city_citychoice_list"
+                android:layout_width="40dp"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

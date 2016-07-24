@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="200dp">
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/frag"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardBackgroundColor="#dad9d9"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout xmlns:fresco="http://schemas.android.com/apk/res-auto"
+            xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/frag_medical_doctor_depart_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心血管内科专家"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/frag_medical_doctor_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/frag_medical_doctor_depart_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/frag_medical_doctor_depart_name"
+                android:layout_gravity="right"
+                android:drawablePadding="5dp"
+                android:drawableRight="@mipmap/public_right_arrow"
+                android:gravity="center_vertical"
+                android:text="更多" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/frag_medical_lsitem_headIamge"
+                style="@style/medical_headview_simpledraweeview"
+                android:layout_below="@id/frag_medical_doctor_depart_name"
+                fresco:placeholderImage="@drawable/widget_dface"
+                fresco:placeholderImageScaleType="fitCenter"
+                fresco:roundAsCircle="true" />
+
+            <TextView
+                android:id="@+id/frag_medical_doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frag_medical_doctor_depart_name"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/frag_medical_lsitem_headIamge"
+                android:gravity="center_vertical"
+                android:text="曹伟"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/frag_medical_doctor_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/frag_medical_doctor_name"
+                android:layout_alignTop="@id/frag_medical_doctor_name"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/frag_medical_doctor_name"
+                android:gravity="center_vertical|clip_horizontal"
+                android:text="副主任医师"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/frag_medical_doctor_goodat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@id/frag_medical_doctor_name"
+                android:layout_below="@id/frag_medical_doctor_name"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="心内科的各种常见病、多发病和疑难病的诊治。包括冠心病、心绞痛、心肌梗死、心衰、心律失常（早搏、房颤、心律不齐等）、心肌病、高血压病、心脏支架治疗前后的管理与咨询等。"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/frag_medical_doctor_service_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/frag_medical_lsitem_headIamge"
+                android:layout_alignRight="@id/frag_medical_lsitem_headIamge"
+                android:layout_below="@id/frag_medical_lsitem_headIamge"
+                android:gravity="center_horizontal"
+                android:text="已签约1918人"
+                android:textSize="10dp" />
+
+            <com.hedgehog.ratingbar.RatingBar
+                android:id="@+id/frag_medica_doctor_service_score"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_alignLeft="@id/frag_medical_lsitem_headIamge"
+                android:layout_below="@id/frag_medical_doctor_service_num"
+                android:layout_marginTop="5dp"
+                android:layout_toLeftOf="@+id/frag_medica_doctor_weekprice"
+                android:layout_toStartOf="@+id/frag_medica_doctor_weekprice"
+                android:gravity="center_horizontal"
+                ratingbar:clickable="false"
+                ratingbar:starCount="5"
+                ratingbar:starEmpty="@mipmap/star_empty"
+                ratingbar:starFill="@mipmap/star_full"
+                ratingbar:starHalf="@mipmap/star_half"
+                ratingbar:starImageSize="15dp" />
+
+            <TextView
+                android:id="@+id/frag_medica_doctor_weekprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/frag_medical_doctor_goodat"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@id/frag_medical_doctor_service_num"
+                android:text="包周:  50.00"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/frag_medical_doctor_monthprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/frag_medica_doctor_weekprice"
+                android:layout_below="@id/frag_medical_doctor_goodat"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/frag_medica_doctor_weekprice"
+                android:text="包月: 200" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="200dp">
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#ccede0"
+
+        app:cardBackgroundColor="#ccede0"
+        app:cardCornerRadius="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ccede0">
+
+            <EditText
+                android:id="@+id/frag_medical_headview_searchedt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:drawable/editbox_background"
+                android:hint="输入关键字查找信息" />
+
+            <ImageView
+                android:id="@+id/frag_medical_headview_searchbtn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/frag_medical_headview_searchedt"
+                android:layout_alignParentRight="true"
+                android:layout_alignRight="@id/frag_medical_headview_searchedt"
+                android:layout_alignTop="@id/frag_medical_headview_searchedt"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="3dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/ico_shape"
+                android:src="@drawable/icon_search" />
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_below="@id/frag_medical_headview_searchedt"
+                android:layout_marginTop="30dp"
+                android:background="#ccede0"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/frag_medical_findBysection"
+                    android:layout_width="98dp"
+                    android:layout_height="80dp"
+                    android:layout_below="@id/frag_medical_headview_searchedt"
+                    android:drawableTop="@drawable/famous_d"
+                    android:gravity="center_horizontal"
+                    android:text="按科室查询" />
+
+                <TextView
+                    android:id="@+id/frag_medical_findBysickness"
+                    android:layout_width="100dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/frag_medical_headview_searchedt"
+                    android:layout_marginLeft="80dp"
+                    android:drawableTop="@drawable/ill"
+                    android:gravity="center_horizontal"
+                    android:text="按疾症查询" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>

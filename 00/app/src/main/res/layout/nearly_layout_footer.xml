@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/drug_infos_layout"
+    android:visibility="gone"
+    android:background="@color/colorWhite"
+    android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/drug_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:text="1.南园医药元岗药房"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/drug_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drug_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:drawableLeft="@drawable/navi"
+            android:drawablePadding="5dp"
+            android:text="125米"
+            android:textColor="#c9c9c9"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/drug_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/drug_name"
+            android:layout_marginRight="20dp"
+            android:layout_toRightOf="@id/drug_distance"
+            android:text="光华走天河原赶工公共我"
+            android:textColor="#c9c9c9"
+            android:textSize="15dp" />
+
+        <View
+            android:id="@+id/drug_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/drug_address"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:background="#c7c4c4" />
+
+        <View
+            android:id="@+id/drug_vertical"
+            android:layout_width="1px"
+            android:layout_height="20dp"
+            android:layout_below="@id/drug_line"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="#c7c4c4" />
+
+        <TextView
+            android:id="@+id/drug_info_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/drug_vertical"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@id/drug_vertical"
+            android:drawableLeft="@drawable/mobile"
+            android:drawablePadding="5dp"
+            android:paddingBottom="10dp"
+            android:text="电话" />
+
+        <TextView
+            android:id="@+id/drug_info_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/drug_vertical"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/drug_vertical"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/navi_blue"
+            android:paddingBottom="10dp"
+            android:text="线路" />
+</RelativeLayout>
